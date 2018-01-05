@@ -42,7 +42,11 @@ class SwaggerController extends Controller
      */
     public function actionIndex()
     {
-        $data  = [];
+        $data  = [
+            'name' => $this->module->name,
+            'urls' => [],
+        ];
+
         $name  = $this->module->name;
         $items = $this->module->api;
 
@@ -70,7 +74,7 @@ class SwaggerController extends Controller
             $basePath = Yii::$app->getModule($version)->getBasePath();
             $items = $this->module->api[$version];
             foreach ($items as $tiem) {
-                if (is_dir($basePath . '/' . $tiem)) {
+                if (is_dir($basePath . '/' . $tiem) || is_file($basePath . '/' . $tiem)) {
                     $directories[] = $basePath . '/' . $tiem;
                 }
             }
