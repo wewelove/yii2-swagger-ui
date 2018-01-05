@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-use wewelove\swagger\assets\SwaggerAsset;
+use iamok\swagger\assets\SwaggerAsset;
 
 SwaggerAsset::register($this);
 
