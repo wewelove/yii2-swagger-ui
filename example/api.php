@@ -9,7 +9,7 @@
  *     @SWG\Info(
  *         version="1.0.0",
  *         title="Swagger Petstore",
- *         description="A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification",
+ *         description="A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification<br><h3>配置与实际不附，请修改!</h3>",
  *         termsOfService="http://swagger.io/terms/",
  *         @SWG\Contact(name="Swagger API Team"),
  *         @SWG\License(name="MIT")
