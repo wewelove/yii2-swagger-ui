@@ -18,7 +18,7 @@ SwaggerAsset::register($this);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Swagger UI</title>
+    <title><?= $name ?></title>
     <?php $this->head() ?>
     <style>
     html
