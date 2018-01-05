@@ -1,7 +1,7 @@
 # yii2-swagger-ui
 
-[![version](https://img.shields.io/packagist/v/wewelove/yii2-swagger-ui.svg?style=flat-square)](https://packagist.org/packages/wewelove/yii2-swagger-ui)
-[![Download](https://img.shields.io/packagist/dt/wewelove/yii2-swagger-ui.svg?style=flat-square)](https://packagist.org/packages/wewelove/yii2-swagger-ui)
+[![version](https://img.shields.io/packagist/v/iamok/yii2-swagger-ui.svg?style=flat-square)](https://packagist.org/packages/iamok/yii2-swagger-ui)
+[![Download](https://img.shields.io/packagist/dt/iamok/yii2-swagger-ui.svg?style=flat-square)](https://packagist.org/packages/iamok/yii2-swagger-ui)
 [![Issues](https://img.shields.io/github/issues/wewelove/yii2-swagger-ui.svg?style=flat-square)](https://github.com/wewelove/yii2-swagger-ui/issues)
 
 扩展集成 [swagger-ui](https://swagger.io/swagger-ui/) 和 [swagger-php](https://github.com/zircote/swagger-php)，根据注释自动生成 OpenAPI 文档。
