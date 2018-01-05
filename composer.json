@@ -1,6 +1,6 @@
 {
   "name": "iamok/yii2-swagger-ui",
-  "description": "扩展集成 swagger-ui 和 swagger-php 项目，根据代码注释自动生成 OpenAPI 文档。",
+  "description": "扩展集成 swagger-ui 和 swagger-php，根据注释自动生成 OpenAPI 文档。",
   "type": "library",
   "keywords": ["yii2", "extension", "swagger"],
   "license": "MIT",
