@@ -23,13 +23,15 @@ class SwaggerController extends Controller
     public function behaviors()
     {
         return ArrayHelper::merge(parent::behaviors(), [
-            [
-                'class' => Cors::className(),
-                'Origin' => ['*'],
-                'Access-Control-Request-Method' => ['GET'],
-                'Access-Control-Request-Headers' => ['*'],
-                'Access-Control-Allow-Credentials' => null,
-                'Access-Control-Max-Age' => 86400
+            'corsFilter' => [
+                'class' => \yii\filters\Cors::className(),
+                'cors' => [
+                    'Origin' => ['*'],
+                    'Access-Control-Request-Method' => ['GET'],
+                    'Access-Control-Request-Headers' => ['*'],
+                    'Access-Control-Allow-Credentials' => null,
+                    'Access-Control-Max-Age' => 86400
+                ]
             ],
         ]);
     }
@@ -47,7 +49,7 @@ class SwaggerController extends Controller
         foreach($items as $version => $item) {
             $data['urls'][] = [
                 'name' => $name . ' ' . $version,
-                'url' => Url::to(['json', 'ver' => $version], true),
+                'url' => Url::to(['json', 'version' => $version], true),
             ];
         }
 
