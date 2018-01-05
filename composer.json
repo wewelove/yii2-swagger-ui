@@ -1,0 +1,23 @@
+{
+  "name": "iamok/yii2-swagger-ui",
+  "description": "扩展集成 swagger-ui 和 swagger-php 项目，根据代码注释自动生成 OpenAPI 文档。",
+  "type": "library",
+  "keywords": ["yii2", "extension", "swagger"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wewelove",
+      "email": "wewelove88@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "^2.0.0",
+    "zircote/swagger-php": "^2.0.0",
+    "bower-asset/swagger-ui": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "iamok\\swagger\\": "src"
+    }
+  }
+}
